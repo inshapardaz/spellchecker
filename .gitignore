@@ -1,0 +1,32 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+**/bin
+**/obj
+.vs
+*.suo
+*.user
+*.log
+*.dbmdl
+/packages/
+/TestResults
+*.Cache
+**/bower_components
+**/node_modules
+**/Staging/*
+**.lock.json
+.vscode
+**/coverage.json
+**/local.setting.json
+
+.idea
+*.jfm
+*.ncrunchproject
+
+#Specific files
+oneui.min.js
+custom.css
+/src/Inshapardaz.Api/App_Data
+/src/_NCrunch_Inshapardaz.Api/StoredText
+*[C]coverage*
