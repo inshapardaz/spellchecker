@@ -1,5 +1,7 @@
 # Urdu Spell Checker
 
+[![Build status](https://ci.appveyor.com/api/projects/status/w19ggs0o8v8v0a4r?svg=true)](https://ci.appveyor.com/project/umerfaruk/spellchecker)
+
 The purpose of this repository is to create a spell check that would give recommendations for a list of corrections for common mistakes a user makes while typing urdu unicode text. 
 
 Some example of these corrections can be following:
