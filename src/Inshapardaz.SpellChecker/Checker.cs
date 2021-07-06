@@ -1,6 +1,4 @@
-﻿using System;
-using System.Text;
-using System.Text.RegularExpressions;
+﻿using System.Text.RegularExpressions;
 
 namespace Inshapardaz.SpellChecker
 {
@@ -10,7 +8,9 @@ namespace Inshapardaz.SpellChecker
         {
             return input.RemoveDoubleSpaces()
                         .RemoveLeadingAndTrailingSpaces()
-                        .FixFullStops();
+                        .FixFullStops()
+                        .FixCommas()
+                        .FixSpaceAroundCommas();
         }
 
         public static string RemoveDoubleSpaces(this string input)
@@ -31,5 +31,16 @@ namespace Inshapardaz.SpellChecker
             return regex.Replace(input, "۔");
         }
 
+        public static string FixCommas(this string input)
+        {
+            Regex regex = new Regex("[,]");
+            return regex.Replace(input, "،");
+        }
+
+        public static string FixSpaceAroundCommas(this string input)
+        {
+            Regex regex = new Regex("\\s(?=[،])");
+            return regex.Replace(input, string.Empty);
+        }
     }
 }
