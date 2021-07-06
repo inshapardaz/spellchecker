@@ -2,6 +2,14 @@
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+      <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
+      <Authors>Muhammad Umer Farooq</Authors>
+      <PackageLicenseUrl>https://opensource.org/licenses/MIT</PackageLicenseUrl>
+      <PackageProjectUrl>https://github.com/inshapardaz/spellchecker</PackageProjectUrl>
+      <RepositoryUrl>https://github.com/inshapardaz/spellchecker</RepositoryUrl>
+      <RepositoryType>Git</RepositoryType>
+      <PackageIconUrl>https://avatars3.githubusercontent.com/u/27545135?v=4&amp;amp;s=200</PackageIconUrl>
   </PropertyGroup>
 
 </Project>
